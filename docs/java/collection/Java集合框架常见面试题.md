@@ -83,11 +83,11 @@ public interface RandomAccess {
 
 ### 补充内容:双向链表和双向循环链表
 
-**双向链表：** 包含两个指针，一个prev指向前一个节点，一个next指向后一个节点。 
+**双向链表：** 包含两个指针，一个prev指向前一个节点，一个next指向后一个节点。
 
 ![双向链表](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/双向链表.png)
 
-**双向循环链表：** 最后一个节点的 next 指向head，而 head 的prev指向最后一个节点，构成一个环。 
+**双向循环链表：** 最后一个节点的 next 指向head，而 head 的prev指向最后一个节点，构成一个环。
 
 ![双向循环链表](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/双向循环链表.png)
 
@@ -95,11 +95,11 @@ public interface RandomAccess {
 
 `Vector`类的所有方法都是同步的。可以由两个线程安全地访问一个Vector对象、但是一个线程访问Vector的话代码要在同步操作上耗费大量的时间。
 
-`Arraylist`不是同步的，所以在不需要保证线程安全时时建议使用Arraylist。
+`Arraylist`不是同步的，所以在不需要保证线程安全时建议使用Arraylist。
 
 ## 说一说 ArrayList 的扩容机制吧
 
-详见笔主的这篇文章:[通过源码一步一步分析ArrayList 扩容机制](ArrayList-Grow.md)
+详见笔主的这篇文章:[通过源码一步一步分析ArrayList 扩容机制](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/collection/ArrayList-Grow.md)
 
 ## HashMap 和 Hashtable 的区别
 
@@ -253,7 +253,7 @@ ConcurrentHashMap 和 Hashtable 的区别主要体现在实现线程安全的方
 
 图片来源：<http://www.cnblogs.com/chengxiao/p/6842045.html>
 
-**HashTable:** 
+**HashTable:**
 
 ![HashTable全表锁](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/HashTable全表锁.png)
 
@@ -284,7 +284,7 @@ static class Segment<K,V> extends ReentrantLock implements Serializable {
 
 ### JDK1.8 （上面有示意图）
 
-ConcurrentHashMap取消了Segment分段锁，采用CAS和synchronized来保证并发安全。数据结构跟HashMap1.8的结构类似，数组+链表/红黑二叉树。Java 8在链表长度超过一定阈值（8）时将链表（寻址时间复杂度为O(N)）转换为红黑树（寻址时间复杂度为O(long(N))）
+ConcurrentHashMap取消了Segment分段锁，采用CAS和synchronized来保证并发安全。数据结构跟HashMap1.8的结构类似，数组+链表/红黑二叉树。Java 8在链表长度超过一定阈值（8）时将链表（寻址时间复杂度为O(N)）转换为红黑树（寻址时间复杂度为O(log(N))）
 
 synchronized只锁定当前链表或红黑二叉树的首节点，这样只要hash不冲突，就不会产生并发，效率又提升N倍。
 
@@ -451,6 +451,6 @@ Output：
 
 **《Java面试突击》:** 由本文档衍生的专为面试而生的《Java面试突击》V2.0 PDF 版本[公众号](#公众号)后台回复 **"Java面试突击"** 即可免费领取！
 
-**Java工程师必备学习资源:** 一些Java工程师常用学习资源公众号后台回复关键字 **“1”** 即可免费无套路获取。 
+**Java工程师必备学习资源:** 一些Java工程师常用学习资源公众号后台回复关键字 **“1”** 即可免费无套路获取。
 
 ![我的公众号](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/167598cd2e17b8ec.png)

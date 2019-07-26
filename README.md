@@ -17,7 +17,6 @@
 </p>
 
 <h2 align="center">Special Sponsors</h2>
-
 <p align="center">
 <!--
 <a href="https://www.aliyun.com/acts/hi618/index?userCode=hf47liqn" target="_blank">
@@ -73,6 +72,8 @@
 ### 基础
 
 * [Java 基础知识回顾](docs/java/Java基础知识.md)
+* [Java 基础知识疑难点/易错点](docs/java/Java疑难点.md)
+* [一些重要的Java程序设计题](docs/java/Java程序设计题.md)
 * [J2EE 基础知识回顾](docs/java/J2EE基础知识.md)
 
 ### 容器
@@ -243,10 +244,7 @@
 
 ## 待办
 
-- [x] [Java 8 新特性总结](docs/java/What's%20New%20in%20JDK8/Java8Tutorial.md)
-- [x] [Java 8 新特性详解](docs/java/What's%20New%20in%20JDK8/Java8教程推荐.md)
 - [ ] Java 多线程类别知识重构(---正在进行中---)
-- [x] [BIO,NIO,AIO 总结 ](docs/java/BIO-NIO-AIO.md)
 - [ ] Netty 总结(---正在进行中---)
 - [ ] 数据结构总结重构(---正在进行中---)
 
@@ -284,7 +282,7 @@ Markdown 格式参考：[Github Markdown格式](https://guides.github.com/featur
 
 添加我的微信备注“Github”,回复关键字 **“加群”** 即可入群。
 
-![我的微信](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-2/JavaGuide.jpg)
+![我的微信](https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019-6/wechat1.jpg)
 
 ### Contributor
 
@@ -292,7 +290,10 @@ Markdown 格式参考：[Github Markdown格式](https://guides.github.com/featur
 
 <a href="https://github.com/fanofxiaofeng">
     <img src="https://avatars0.githubusercontent.com/u/3983683?s=460&v=4" width="45px"></a>
-<a href="https://github.com/dongzl">
+<a href="https://github.com/fanchenggang">  
+    <img src="https://avatars2.githubusercontent.com/u/8225921?s=460&v=4" width="45px">
+</a>
+<a href="https://github.com/ipofss">
     <img src="https://avatars1.githubusercontent.com/u/5917359?s=460&v=4" width="45px"></a>
 <a href="https://github.com/Gene1994">
     <img src="https://avatars3.githubusercontent.com/u/24930369?s=460&v=4" width="45px">
